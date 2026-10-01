@@ -2,11 +2,17 @@
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "pake-capability",
   "description": "Capability for the pake app.",
-  "webviews": ["pake"],
-  "remote": {
-    "urls": ["https://*.*"]
-  },
+  "webviews": ["pake", "pake-*"],
   "permissions": [
+    "allow-download-file",
+    "allow-send-notification",
+    "allow-increment-dock-badge",
+    "allow-set-dock-badge",
+    "allow-set-dock-badge-label",
+    "allow-clear-dock-badge",
+    "allow-update-theme-mode",
+    "allow-set-zoom",
+    "allow-webview-navigate",
     "shell:allow-open",
     "core:window:allow-theme",
     "core:window:allow-start-dragging",
